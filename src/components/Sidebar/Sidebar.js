@@ -7,13 +7,13 @@ import ExerciseDetail from "../ExerciseDetail/ExerciseDetail";
 
 const Sidebar = (props) => {
 	
-	const {onUpdateBreakTime, currentBreakTime} = props
+	const {onUpdateBreakTime, currentBreakTime, totalExerciseTime} = props
 	
 	return (
 		<div className="sidebar">
 			<UserInfo />
 			<BreakTime currentBreakTime={currentBreakTime} onClickItem={onUpdateBreakTime} />
-			<ExerciseDetail currentBreakTime={currentBreakTime} />
+			<ExerciseDetail currentBreakTime={currentBreakTime} totalExerciseTime={totalExerciseTime}  />
         </div>
 	);
 };

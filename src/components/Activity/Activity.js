@@ -6,7 +6,7 @@ import {faPlus, faSquarePlus} from "@fortawesome/free-solid-svg-icons";
 
 const Activity = (props) => {
 	
-	const {activity: { title, id, cover, forAge, summary, duration }} = props
+	const {activity: { title, id, cover, forAge, summary, duration }, onUpdateExerciseTime} = props
 	
 	return (
 		<div className="card activity-card">
@@ -17,7 +17,7 @@ const Activity = (props) => {
 			<p className="card-summary">{summary}</p>
 			<p className="card-desc">For Age: <span className="text-strong"> {forAge[0]}-{forAge[1]}</span> </p>
 			<p className="card-desc">Time required: <span className="text-strong"> {duration}h</span></p>
-			<Button className="btn-primary btn-block">
+			<Button className="btn-primary btn-block" onClick={()=>onUpdateExerciseTime(duration)}>
 				<FontAwesomeIcon icon={faPlus} />
 				Add to list</Button>
         </div>

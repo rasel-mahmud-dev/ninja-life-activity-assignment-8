@@ -5,7 +5,7 @@ import "./exerciseDetail.css";
 
 
 const ExerciseDetail = (props) => {
-	const { currentBreakTime } = props
+	const { currentBreakTime, totalExerciseTime } = props
 	
 	return (
 		<div className="exercise-detail">
@@ -13,7 +13,7 @@ const ExerciseDetail = (props) => {
 			
 			<div className="sidebar-card">
 				<p>Exercise time</p>
-				<span>200hours</span>
+				<span>{totalExerciseTime} hours</span>
 			</div>
 			<div className="sidebar-card">
 				<p>Break time</p>

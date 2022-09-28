@@ -7,6 +7,7 @@ import Sidebar from "../components/Sidebar/Sidebar";
 const ActivityList = () => {
 	const [activities, setActivities] = useState([])
 	const [currentBreakTimeValue, setCurrentBreakTimeValue] = useState(10)
+	const [totalExerciseTime, setTotalExerciseTime] = useState(0)
 	
 	
 	useEffect(()=>{
@@ -29,8 +30,14 @@ const ActivityList = () => {
 	
 	
 	function handleSetCurrentBreakTime(value){
+		// add value in localstorage
 		localStorage.setItem("breakTime", value)
 		setCurrentBreakTimeValue(value)
+	}
+	
+	function handleSetTotalExerciseTime(time){
+		let updateTime = totalExerciseTime + time
+		setTotalExerciseTime(updateTime)
 	}
 	
 	return (
@@ -38,13 +45,17 @@ const ActivityList = () => {
 			<div>
 				<h4 className="section-title">Select Daily Activity</h4>
 				<div className="activity-list">
-					{ activities.map(activity=> <Activity key={activity.id} activity={activity} />) }
+					{ activities.map(activity=> <Activity
+						onUpdateExerciseTime={handleSetTotalExerciseTime}
+						key={activity.id} activity={activity} />
+					) }
 				</div>
 			</div>
 			
 			<Sidebar
 				onUpdateBreakTime={handleSetCurrentBreakTime}
 				currentBreakTime={currentBreakTimeValue}
+				totalExerciseTime={totalExerciseTime}
 			/>
 			
         </div>
