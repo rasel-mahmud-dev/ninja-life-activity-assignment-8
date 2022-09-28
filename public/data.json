@@ -2,51 +2,51 @@
   {
     "id": 1,
     "title": "Ninja Coding",
-    "summary": "",
-    "cover": "",
+    "summary": "Amet minim mollit non deserunt\nullamco est sit aliqua dolor do\namet sint.",
+    "cover": "/general-hacker.jpg",
     "forAge": [20, 30],
-    "timeRequire": 2
+    "duration": 2
   },
   {
     "id": 2,
     "title": "General Study",
-    "summary": "",
-    "cover": "",
+    "summary": "Amet minim mollit non deserunt\nullamco est sit aliqua dolor do\namet sint.",
+    "cover": "/General-Studies-Crash-Course-Lukmaan-IAS-Facebook.jpg",
     "forAge": [12, 50],
-    "timeRequire": 1
+    "duration": 1
   },
   {
     "id": 3,
     "title": "Adda with friends",
-    "summary": "",
+    "summary": "Amet minim mollit non deserunt\nullamco est sit aliqua dolor do\namet sint.",
     "cover": "",
     "forAge": [18, 40],
-    "timeRequire": 2
+    "duration": 2
   },
 
   {
     "id": 4,
     "title": "Time for family",
-    "summary": "",
+    "summary": "Amet minim mollit non deserunt\nullamco est sit aliqua dolor do\namet sint.",
     "cover": "",
     "forAge": [25, 50],
-    "timeRequire": 3
+    "duration": 3
   },
 
   {
     "id": 5,
     "title": "Sleep",
-    "summary": "",
+    "summary": "Amet minim mollit non deserunt\nullamco est sit aliqua dolor do\namet sint.",
     "cover": "",
     "forAge": [12, 50],
-    "timeRequire": 8
+    "duration": 8
   },
   {
     "id": 6,
     "title": "Wake up Morning and Prayer",
-    "summary": "",
+    "summary": "Amet minim mollit non deserunt\nullamco est sit aliqua dolor do\namet sint.",
     "cover": "",
     "forAge": [12, 50],
-    "timeRequire": 8
+    "duration": 8
   }
 ]

@@ -8,3 +8,8 @@
     --bg-color: #F2F4FA;
     --primary-color: #5D5FEF;
 }
+
+.text-strong{
+    font-weight: 600;
+    color: #484848
+}

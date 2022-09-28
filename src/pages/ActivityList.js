@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import "./activityList.css"
+import Activity from "../components/Activity/Activity";
 
 const ActivityList = () => {
 	const [activities, setActivities] = useState([])
@@ -18,11 +19,9 @@ const ActivityList = () => {
 	return (
 		<div className="activity-container">
 			<h4 className="section-title">Select Daily Activity</h4>
-			{ activities.map(activity=>(
-				<div>
-					<h1>{activity.title}</h1>
-				</div>
-			)) }
+			<div className="activity-list">
+				{ activities.map(activity=> <Activity key={activity.id} activity={activity} />) }
+			</div>
 			
         </div>
 	);
