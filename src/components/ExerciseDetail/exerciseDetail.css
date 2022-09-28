@@ -1,0 +1,20 @@
+.exercise-detail{
+    padding-top: 10px;
+}
+
+
+.exercise-detail .sidebar-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px
+}
+
+.exercise-detail .sidebar-card p{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.exercise-detail .sidebar-card span{
+    color: rgba(38, 38, 38, 0.34);
+}
