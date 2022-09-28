@@ -6,6 +6,8 @@ import Sidebar from "../components/Sidebar/Sidebar";
 
 const ActivityList = () => {
 	const [activities, setActivities] = useState([])
+	const [currentBreakTimeValue, setCurrentBreakTimeValue] = useState(10)
+	
 	
 	useEffect(()=>{
 		fetch("/data.json")
@@ -16,7 +18,20 @@ const ActivityList = () => {
 			.catch(ex=>{
 			
 			})
+		
+		let breakTime = localStorage.getItem("breakTime")
+		if(breakTime){
+			setCurrentBreakTimeValue(Number(breakTime))
+		}
+		
 	}, [])
+	
+	
+	
+	function handleSetCurrentBreakTime(value){
+		localStorage.setItem("breakTime", value)
+		setCurrentBreakTimeValue(value)
+	}
 	
 	return (
 		<div className="activity-container">
@@ -27,8 +42,10 @@ const ActivityList = () => {
 				</div>
 			</div>
 			
-			<Sidebar />
-			
+			<Sidebar
+				onUpdateBreakTime={handleSetCurrentBreakTime}
+				currentBreakTime={currentBreakTimeValue}
+			/>
 			
         </div>
 	);

@@ -4,11 +4,14 @@ import "./sidebar.css";
 import BreakTime from "../BreakTime/BreakTime";
 
 
-const Sidebar = () => {
+const Sidebar = (props) => {
+	
+	const {onUpdateBreakTime, currentBreakTime} = props
+	
 	return (
 		<div className="sidebar">
 			<UserInfo />
-			<BreakTime />
+			<BreakTime currentBreakTime={currentBreakTime} onClickItem={onUpdateBreakTime} />
         </div>
 	);
 };

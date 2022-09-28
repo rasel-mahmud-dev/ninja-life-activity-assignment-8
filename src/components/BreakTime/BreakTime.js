@@ -4,7 +4,7 @@ import "./breakTime.css";
 
 const BreakTime = (props) => {
 	
-	const {currentBreakTimeValue, onClickItem} = props
+	const {currentBreakTime, onClickItem} = props
 	
 	const breakTimes = [10, 20, 30, 40, 50]
 	
@@ -16,7 +16,7 @@ const BreakTime = (props) => {
 				<div
 					onClick={()=>onClickItem(time)}
 					key={time}
-				     className={`break-time__item ${currentBreakTimeValue === time ? "active" : ""}`}
+				     className={`break-time__item ${currentBreakTime === time ? "active" : ""}`}
 				>
 					<span>{time}s</span>
 					
