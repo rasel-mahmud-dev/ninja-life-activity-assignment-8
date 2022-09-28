@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
-
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faEnvelope, faLocationDot} from '@fortawesome/free-solid-svg-icons'
 const UserInfo = (props) => {
   return (
     <div>
@@ -10,7 +11,11 @@ const UserInfo = (props) => {
         </div>
         <div className="">
           <h2 className="user-name">Rasel Mahmud</h2>
-          <p className="user-address">Bogra Bangladesh</p>
+          <p className="user-address">
+       
+            <FontAwesomeIcon icon={faLocationDot} />
+            Bogra Bangladesh</p>
+     
         </div>
       </div>
 
