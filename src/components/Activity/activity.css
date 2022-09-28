@@ -7,8 +7,9 @@
 
 .card-title{
     font-weight: 500;
-    font-size: 18px;
-    color: #505050
+    font-size: 20px;
+    color: #212121;
+    margin-bottom: 10px;
 }
 
 .activity-image{
@@ -29,6 +30,11 @@
     margin-bottom: 5px;
 }
 .card-desc{
-    color: #5a5a5a;
-    font-size: 16px
+    color: #414141;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.card button{
+    margin-top: 20px;
 }
