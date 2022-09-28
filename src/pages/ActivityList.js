@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import "./activityList.css"
 import Activity from "../components/Activity/Activity";
+import Sidebar from "../components/Sidebar/Sidebar";
+
 
 const ActivityList = () => {
 	const [activities, setActivities] = useState([])
@@ -18,10 +20,15 @@ const ActivityList = () => {
 	
 	return (
 		<div className="activity-container">
-			<h4 className="section-title">Select Daily Activity</h4>
-			<div className="activity-list">
-				{ activities.map(activity=> <Activity key={activity.id} activity={activity} />) }
+			<div>
+				<h4 className="section-title">Select Daily Activity</h4>
+				<div className="activity-list">
+					{ activities.map(activity=> <Activity key={activity.id} activity={activity} />) }
+				</div>
 			</div>
+			
+			<Sidebar />
+			
 			
         </div>
 	);

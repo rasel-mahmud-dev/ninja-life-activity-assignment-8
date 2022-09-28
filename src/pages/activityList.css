@@ -3,6 +3,9 @@
 .activity-container{
     padding: 10px 100px;
     margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 300px
+
 }
 
 .activity-list{

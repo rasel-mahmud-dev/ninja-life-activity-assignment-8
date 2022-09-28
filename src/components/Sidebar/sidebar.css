@@ -1,0 +1,12 @@
+
+.sidebar{
+    background: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 300px;
+    padding: 20px;
+
+
+}
