@@ -3,9 +3,7 @@
 .activity-container{
     padding: 10px 100px;
     margin-top: 50px;
-    display: grid;
-    grid-template-columns: 1fr 300px
-
+    margin-right: 300px;
 }
 
 .activity-list{
@@ -18,4 +16,41 @@
 .section-title{
     font-size: 18px;
     font-weight: 600;
+}
+
+@media screen and (max-width: 1200px){
+    .activity-container{
+        padding: 10px 50px;
+    }
+    .activity-list{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+@media screen and (max-width: 1000px){
+    .activity-container{
+        padding: 10px 30px;
+    }
+    .activity-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 776px){
+    .activity-container {
+        margin-top: 20px;
+        padding: 10px 20px;
+        margin-right: 0px;
+    }
+}
+
+
+@media screen and (max-width: 576px){
+    .activity-container {
+        padding: 10px;
+    }
+    .activity-list{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
 }

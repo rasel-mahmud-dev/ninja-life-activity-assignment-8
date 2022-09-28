@@ -22,24 +22,24 @@ const UserInfo = (props) => {
       <div className="user-slats">
         <span className="slats-item">
           <div>
-            <span className="slats-number">75</span>
+            <span className="slats-number">61</span>
             <span className="text-small small-slats-unit">kg</span>
           </div>
           <span className="slats-unit">Weight</span>
         </span>
         <span className="slats-item">
           <div>
-            <span className="slats-number">6.5</span>
+            <span className="slats-number">5.6</span>
           </div>
           <span className="slats-unit">Height</span>
         </span>
 
         <span className="slats-item">
           <div>
-            <span className="slats-number">25</span>
+            <span className="slats-number">24</span>
             <span className="text-small small-slats-unit">yrs</span>
           </div>
-          <div className="slats-unit">Age</div>
+          <span className="slats-unit">Age</span>
         </span>
       </div>
     </div>
