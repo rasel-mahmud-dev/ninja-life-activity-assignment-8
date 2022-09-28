@@ -1,0 +1,32 @@
+
+.break-time{
+    display: flex;
+    justify-content: space-between;
+    background: var(--bg-color);
+    padding: 15px 20px;
+    margin-top: 8px;
+    border-radius: 12px;
+}
+
+.break-time__item{
+    background: white;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    color: #363636;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.break-time__item:hover{
+    background: var(--primary-color);
+    color: #efefef;
+}
+
+.break-time__item.active{
+    background: var(--primary-color);
+    color: #efefef;
+}
