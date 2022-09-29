@@ -1,52 +1,52 @@
 [
   {
     "id": 1,
-    "title": "Ninja Coding",
-    "summary": "Amet minim mollit non deserunt\nullamco est sit aliqua dolor do\namet sint.",
+    "title": "Ninja Coding Practise",
+    "summary": "Become a ninja developer you need to practise more coding",
     "cover": "/general-hacker.jpg",
     "forAge": [20, 30],
-    "duration": 2
+    "duration": 6
   },
   {
     "id": 2,
     "title": "General Study",
-    "summary": "Amet minim mollit non deserunt\nullamco est sit aliqua dolor do\namet sint.",
+    "summary": "Keep fresh mind and adapt with era take some general study",
     "cover": "/General-Studies-Crash-Course-Lukmaan-IAS-Facebook.jpg",
     "forAge": [12, 50],
-    "duration": 1
+    "duration": 1.5
   },
   {
     "id": 3,
     "title": "Adda with friends",
-    "summary": "Amet minim mollit non deserunt\nullamco est sit aliqua dolor do\namet sint.",
-    "cover": "",
+    "summary": "Adda with friends keep you boring free mind. also it build relationship with other peoples",
+    "cover": "/Adda-with-friends.png",
     "forAge": [18, 40],
-    "duration": 2
+    "duration": 1
   },
 
   {
     "id": 4,
     "title": "Time for family",
-    "summary": "Amet minim mollit non deserunt\nullamco est sit aliqua dolor do\namet sint.",
-    "cover": "",
+    "summary": "Family is important thing in society. You need to spend some time with family",
+    "cover": "/istockphoto-1199623208-612x612.jpg",
     "forAge": [25, 50],
-    "duration": 3
+    "duration": 2
   },
 
   {
     "id": 5,
     "title": "Sleep",
-    "summary": "Amet minim mollit non deserunt\nullamco est sit aliqua dolor do\namet sint.",
-    "cover": "",
+    "summary": "Proper sleep make a man healthy and build you growth up",
+    "cover": "201707-omag-fg-sleeping-949x534.jpg",
     "forAge": [12, 50],
     "duration": 8
   },
   {
     "id": 6,
-    "title": "Wake up Morning and Prayer",
-    "summary": "Amet minim mollit non deserunt\nullamco est sit aliqua dolor do\namet sint.",
-    "cover": "",
+    "title": "Take Breakfast",
+    "summary": "Take a breakfast, it help you job properly. and keep strong",
+    "cover": "/111201852-cute-little-children-having-breakfast-at-home.webp",
     "forAge": [12, 50],
-    "duration": 8
+    "duration": 0.5
   }
 ]

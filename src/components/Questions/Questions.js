@@ -3,24 +3,27 @@ import "./question.css"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faAngleDown, faAngleRight} from "@fortawesome/free-solid-svg-icons";
 
-
 const Questions = (props) => {
 	
 	const questions = [
 		{
 			id: 1,
 			question: `How does work Reactjs ?`,
-			answer: `How does work Reactjs ?`
+			answer: `React is a javascript library that allow to create UI. Behind the seen it create virtual dom that it shadow of real dom. and render to real dom. after changes some data it not replace hold DOM in real dom, compare virtual dom and react dom using diff algorithm that is highly optimized and after comparing it only update on real dom that is changed.`
 		},
 		{
 			id: 2,
-			question: `How does work Reactjs ?`,
-			answer: `How does work Reactjs ?`
+			question: `What is different between state and props ?`,
+			answer: `Props are used to pass data parent component to child component ? it readonly and immutable. state are local data store that is used own only the component.
+			it can't pass data to other component, only be pass as props and it read write data. this.setState method can update state in class component and functional component react useStore hook return Dispatch method as array if index 1. that update state
+			`
 		},
 		{
 			id: 3,
-			question: `How does work Reactjs ?`,
-			answer: `How does work Reactjs ?`
+			question: `What use of useEffect hook ?`,
+			answer: `useEffect best place for initial api call or data fetching. because it render only once if we pass second argument as empty array.
+			Although It not only use for initial api call. It also use for any side effect in component. like re render for specific state change using pass state in dependency array. timer and we can clear any subscribed event when component unmount using return function in useEffect.
+			`
 		}
 	]
 	
@@ -41,13 +44,13 @@ const Questions = (props) => {
 		<div className="accordion">
 			{ questions.map((item)=>(
 				<div className="accordion-item">
-					<li className="accordion-header" onClick={()=>toggleItem(item.id)}>
+					<li className={`accordion-header ${openIds.includes(item.id) ? 'active-item' : ''}`} onClick={()=>toggleItem(item.id)}>
 						<h3>{item.question}</h3>
 						<FontAwesomeIcon icon={openIds.includes(item.id) ? faAngleDown : faAngleRight } />
 					</li>
 					
 					<div className={`content ${openIds.includes(item.id) ? 'expand-content' : 'collapse-content'}`} >
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cumque, eius est laborum laudantium neque nisi ratione tempore vero voluptatibus. Cum debitis est provident! Accusamus ad alias atque distinctio dolores eos, fugit illo, in necessitatibus, numquam optio quas quibusdam quisquam sequi vel? Aut ea, laborum. Cupiditate, dolorem enim ex excepturi harum possimus quam? A ab accusamus aut autem commodi culpa deserunt, dolore illum maxime molestiae necessitatibus neque omnis, recusandae repellendus, saepe sequi ullam ut veniam. Aliquam, consectetur consequuntur cum deleniti dolorem doloribus esse excepturi, mollitia nihil nobis repellat sequi suscipit vel! Doloremque ea enim error harum iste natus neque suscipit!
+						{item.answer}
 					</div>
 					
 				</div>

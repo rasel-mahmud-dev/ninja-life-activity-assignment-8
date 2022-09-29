@@ -8,8 +8,8 @@ const Header = ({onToggleMobileSidebar}) => {
     <>
       <header className="header">
         <div className="logo">
-          <img src="/logo.jpg" alt="" />
-          <h4>Ninja-Life-Activity</h4>
+          <img src="/logo.png" alt="" />
+        <img className="logo-name" src="/logo-name.svg" alt=""/>
         </div>
           <FontAwesomeIcon className="toggle-icon" onClick={onToggleMobileSidebar} icon={faBars} />
       </header>

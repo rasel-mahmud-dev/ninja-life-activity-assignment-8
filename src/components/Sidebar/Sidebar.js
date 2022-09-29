@@ -3,6 +3,7 @@ import UserInfo from "../UserInfo/UserInfo";
 import "./sidebar.css";
 import BreakTime from "../BreakTime/BreakTime";
 import ExerciseDetail from "../ExerciseDetail/ExerciseDetail";
+import Button from "../Button/Button";
 
 const Sidebar = (props) => {
   const {
@@ -27,6 +28,9 @@ const Sidebar = (props) => {
           currentBreakTime={currentBreakTime}
           totalExerciseTime={totalExerciseTime}
         />
+        
+        <Button className="btn-primary btn-block submit-btn">Activity Completed</Button>
+        
       </div>
     </>
   );

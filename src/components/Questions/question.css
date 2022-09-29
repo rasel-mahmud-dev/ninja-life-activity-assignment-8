@@ -1,5 +1,6 @@
 .questions{
-    margin-top: 100px;
+    margin: 100px 0;
+
 }
 .questions .section-title{
     margin-bottom: 10px;
@@ -7,7 +8,7 @@
 
 .accordion{
     background: white;
-    border-radius: 10px;
+    border-radius: 12px;
 }
 
 .accordion-item:not(:last-child){
@@ -20,20 +21,22 @@
     justify-content: space-between;
     padding: 8px 10px;
     cursor: pointer;
-
 }
-
 
 .accordion-header h3{
     font-weight: 500;
     color: #212121;
     font-size: 16px;
-
 }
+.accordion-header.active-item, .accordion-header.active-item h3{
+    color: #4caf50;
+}
+
 .expand-content{
     display: block;
     padding: 5px 10px;
     color: #4f4f4f;
+    white-space: pre-line;
     margin-bottom: 20px;
 }
 .collapse-content{

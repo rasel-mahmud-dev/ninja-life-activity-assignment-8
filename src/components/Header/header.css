@@ -13,12 +13,8 @@
     align-items: center;
 }
 
-.header .logo h4{
-    font-weight: 700;
-    margin: 0;
-    font-size: 25px;
-    color: var(--primary-color);
-    text-transform: uppercase;
+.header .logo .logo-name{
+    width: 500px;
 }
 
 
@@ -45,8 +41,8 @@
         z-index: 12;
     }
 
-    .header .logo h4{
-        font-size: 16px;
+    .header .logo .logo-name{
+        width: 200px;
     }
 
     .header .logo img{
