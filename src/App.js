@@ -2,6 +2,7 @@ import './App.css';
 import Header from "./components/Header/Header";
 import ActivityList from "./pages/ActivityList";
 import {useEffect, useState} from "react";
+import Questions from "./components/Questions/Questions";
 
 
 function App() {
@@ -39,6 +40,8 @@ function App() {
             onToggleMobileSidebar={toggleOpenSidebar}
             isOpenMobileSidebar={isOpenMobileSidebar}
         />
+        
+        
     </div>
   );
 }

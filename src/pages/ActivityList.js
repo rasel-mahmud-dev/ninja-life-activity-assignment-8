@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import "./activityList.css"
 import Activity from "../components/Activity/Activity";
 import Sidebar from "../components/Sidebar/Sidebar";
+import Questions from "../components/Questions/Questions";
 
 
 const ActivityList = ({isOpenMobileSidebar, onToggleMobileSidebar}) => {
@@ -52,6 +53,7 @@ const ActivityList = ({isOpenMobileSidebar, onToggleMobileSidebar}) => {
 				</div>
 			</div>
 			
+			{/**** fixed sidebar ****/}
 			<Sidebar
 				onToggleMobileSidebar={onToggleMobileSidebar}
 				isOpenMobileSidebar={isOpenMobileSidebar}
@@ -59,6 +61,9 @@ const ActivityList = ({isOpenMobileSidebar, onToggleMobileSidebar}) => {
 				currentBreakTime={currentBreakTimeValue}
 				totalExerciseTime={totalExerciseTime}
 			/>
+			
+			{/**** some question list component ****/}
+			<Questions />
 			
         </div>
 	);

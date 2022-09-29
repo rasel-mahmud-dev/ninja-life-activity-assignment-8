@@ -1,0 +1,41 @@
+.questions{
+    margin-top: 100px;
+}
+.questions .section-title{
+    margin-bottom: 10px;
+}
+
+.accordion{
+    background: white;
+    border-radius: 10px;
+}
+
+.accordion-item:not(:last-child){
+    border-bottom: 1px solid #70707047;
+}
+
+.accordion-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px;
+    cursor: pointer;
+
+}
+
+
+.accordion-header h3{
+    font-weight: 500;
+    color: #212121;
+    font-size: 16px;
+
+}
+.expand-content{
+    display: block;
+    padding: 5px 10px;
+    color: #4f4f4f;
+    margin-bottom: 20px;
+}
+.collapse-content{
+    display: none;
+}
