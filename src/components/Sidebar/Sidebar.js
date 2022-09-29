@@ -1,21 +1,35 @@
-import React from 'react';
-import UserInfo from "../UserInfo/UserInfo"
+import React from "react";
+import UserInfo from "../UserInfo/UserInfo";
 import "./sidebar.css";
 import BreakTime from "../BreakTime/BreakTime";
 import ExerciseDetail from "../ExerciseDetail/ExerciseDetail";
 
-
 const Sidebar = (props) => {
-	
-	const {onUpdateBreakTime, currentBreakTime, totalExerciseTime} = props
-	
-	return (
-		<div className="sidebar">
-			<UserInfo />
-			<BreakTime currentBreakTime={currentBreakTime} onClickItem={onUpdateBreakTime} />
-			<ExerciseDetail currentBreakTime={currentBreakTime} totalExerciseTime={totalExerciseTime}  />
-        </div>
-	);
+  const {
+    onUpdateBreakTime,
+    currentBreakTime,
+    totalExerciseTime,
+    isOpenMobileSidebar,
+    onToggleMobileSidebar
+  } = props;
+
+  return (
+    <>
+      {isOpenMobileSidebar && <div onClick={onToggleMobileSidebar} className="sidebar-backdrop-overlay"></div>}
+      
+      <div className={`sidebar ${isOpenMobileSidebar ? "mobile-sidebar" : ""}`}>
+        <UserInfo />
+        <BreakTime
+          currentBreakTime={currentBreakTime}
+          onClickItem={onUpdateBreakTime}
+        />
+        <ExerciseDetail
+          currentBreakTime={currentBreakTime}
+          totalExerciseTime={totalExerciseTime}
+        />
+      </div>
+    </>
+  );
 };
 
 export default Sidebar;

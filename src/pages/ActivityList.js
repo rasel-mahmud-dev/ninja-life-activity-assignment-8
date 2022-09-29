@@ -4,7 +4,7 @@ import Activity from "../components/Activity/Activity";
 import Sidebar from "../components/Sidebar/Sidebar";
 
 
-const ActivityList = () => {
+const ActivityList = ({isOpenMobileSidebar, onToggleMobileSidebar}) => {
 	const [activities, setActivities] = useState([])
 	const [currentBreakTimeValue, setCurrentBreakTimeValue] = useState(10)
 	const [totalExerciseTime, setTotalExerciseTime] = useState(0)
@@ -53,6 +53,8 @@ const ActivityList = () => {
 			</div>
 			
 			<Sidebar
+				onToggleMobileSidebar={onToggleMobileSidebar}
+				isOpenMobileSidebar={isOpenMobileSidebar}
 				onUpdateBreakTime={handleSetCurrentBreakTime}
 				currentBreakTime={currentBreakTimeValue}
 				totalExerciseTime={totalExerciseTime}

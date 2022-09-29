@@ -32,7 +32,7 @@
     display: none;
 }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 776px){
     .header{
         position: fixed;
         top: 0;
@@ -42,6 +42,7 @@
         width: 100%;
         align-items: center;
         justify-content: space-between;
+        z-index: 12;
     }
 
     .header .logo h4{
